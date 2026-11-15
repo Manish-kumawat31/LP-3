@@ -90,3 +90,181 @@ public class huffman {
         sc.close();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * THEORY:
+ * 
+ * Huffman Encoding is a lossless data compression technique used
+ * to reduce the size of data. It assigns shorter binary codes to
+ * characters that occur more frequently and longer codes to
+ * characters that occur less frequently.
+ * 
+ * 1. Greedy Strategy:
+ * Huffman Encoding uses a Greedy Strategy. It selects the two
+ * characters or nodes having the smallest frequencies and combines
+ * them into a new node. This process is repeated until only one
+ * node remains.
+ * 
+ * 2. Huffman Tree:
+ * A Huffman Tree is a binary tree used to generate Huffman codes.
+ * Leaf nodes represent characters, and internal nodes represent
+ * the combined frequencies of characters.
+ * 
+ * 3. Working:
+ * - Calculate the frequency of each character.
+ * - Insert all characters into a priority queue.
+ * - Select the two nodes with the smallest frequencies.
+ * - Combine their frequencies and create a new node.
+ * - Repeat until only one node remains.
+ * - Assign 0 to the left branch and 1 to the right branch.
+ * - Generate the binary code for each character.
+ * 
+ * 4. Example:
+ * 
+ * Character Frequency
+ * A 5
+ * B 9
+ * C 12
+ * D 13
+ * 
+ * First, combine A(5) and B(9) = 14.
+ * Next, combine C(12) and D(13) = 25.
+ * Then, combine 14 and 25 = 39.
+ * 
+ * The final node becomes the root of the Huffman Tree.
+ * 
+ * 5. Lossless Compression:
+ * Huffman Encoding is called lossless compression because the
+ * original data can be recovered without losing any information.
+ * 
+ * 6. Time Complexity:
+ * Building the Huffman Tree takes O(n log n) time, where n is
+ * the number of unique characters.
+ * 
+ * 7. Space Complexity:
+ * The space complexity is O(n) for storing the Huffman Tree
+ * and character codes.
+ * 
+ * 8. Applications:
+ * - ZIP file compression.
+ * - JPEG image compression.
+ * - Data transmission.
+ * - File compression systems.
+ * 
+ * Conclusion:
+ * Huffman Encoding uses a Greedy Strategy to generate variable-length
+ * binary codes based on character frequencies. It reduces data size
+ * and allows the original data to be recovered without information loss.
+ */

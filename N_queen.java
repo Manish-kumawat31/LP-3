@@ -82,3 +82,190 @@ public class N_queen {
         sc.close();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+THEORY:
+
+The N-Queens problem is a famous problem in computer science
+in which we have to place N Queens on an N x N chessboard
+so that no two Queens attack each other.
+
+A Queen can attack horizontally, vertically and diagonally.
+Therefore, no two Queens should be placed in the same row,
+same column or same diagonal.
+
+1. Backtracking:
+
+Backtracking is an algorithmic technique used to solve problems
+by trying different possible solutions. If a selected position
+does not lead to a valid solution, the algorithm goes back
+and tries another position.
+
+2. Working:
+- Create an N x N chessboard.
+- Place the first Queen at the given position.
+- Start placing the remaining Queens row by row.
+- Check whether the selected position is safe.
+- If the position is safe, place the Queen.
+- Move to the next row.
+- If no safe position is available, remove the previously
+  placed Queen and try another column.
+- Repeat until all N Queens are placed.
+- Display the final chessboard matrix.
+
+3. Safe Position:
+
+Before placing a Queen, check three conditions:
+
+- Same Column: No other Queen should be in the same column.
+- Left Diagonal: No Queen should be present in the upper-left
+  diagonal.
+- Right Diagonal: No Queen should be present in the upper-right
+  diagonal.
+
+4. Example:
+
+For a 4 x 4 chessboard, one valid solution is:
+
+0 1 0 0
+0 0 0 1
+1 0 0 0
+0 0 1 0
+
+Here:
+1 represents a Queen.
+0 represents an empty position.
+
+No two Queens attack each other.
+
+5. Backtracking Process:
+
+If a Queen cannot be placed safely in the current row,
+the algorithm goes back to the previous row, removes the
+previous Queen and tries another position.
+
+This process continues until a valid solution is found.
+
+6. Time Complexity:
+O(N!) upper bound for the usual row-by-row backtracking
+approach.
+
+7. Space Complexity:
+O(N^2) for storing the chessboard matrix.
+Recursive calls require O(N) additional stack space.
+
+8. Applications:
+- Chessboard problems.
+- Puzzle solving.
+- Constraint satisfaction problems.
+- Scheduling problems.
+- Combinatorial optimization.
+
+Conclusion:
+The N-Queens problem is solved using the Backtracking technique.
+It places Queens one by one while checking safe positions.
+If a position is not valid, the algorithm goes back and tries
+another position until a valid solution is generated.
+*/
